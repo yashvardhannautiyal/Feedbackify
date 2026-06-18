@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './pages/HomePage/HomePage'
 
 function App() {
   return (
-    <div>
-      <p className='text-4xl'>Feedback collector</p>
+    <div className='bg-orange-50'>
+      <HomePage />
     </div>
   )
 }
