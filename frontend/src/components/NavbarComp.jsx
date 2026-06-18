@@ -2,7 +2,7 @@ import React from "react";
 import { LuMessagesSquare } from "react-icons/lu";
 import { FiMoon } from "react-icons/fi";
 
-function HomeNav() {
+function NavbarComp() {
   return (
     <>
       <header className="flex justify-between py-4 px-30">
@@ -23,4 +23,4 @@ function HomeNav() {
   );
 }
 
-export default HomeNav;
+export default NavbarComp;

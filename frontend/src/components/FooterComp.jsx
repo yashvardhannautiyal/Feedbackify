@@ -2,7 +2,7 @@ import React from "react";
 import { LuMessagesSquare } from "react-icons/lu"
 import { FaRegCopyright } from "react-icons/fa";
 
-function HomeFooter() {
+function FooterComp() {
   return (
     <>
     <div className="flex justify-between px-30 py-3">
@@ -19,4 +19,4 @@ function HomeFooter() {
   );
 }
 
-export default HomeFooter;
+export default FooterComp;
