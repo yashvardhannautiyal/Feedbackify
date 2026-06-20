@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NavbarComp from "../../components/NavbarComp";
+import DashboardNav from "../../components/DashboardNav";
 import FeedbackForm from "../../components/FeedbackForm";
 import FooterComp from "../../components/FooterComp";
 import SearchBar from "../../components/SearchBar";
@@ -42,7 +42,7 @@ function Dashboard() {
 
   return (
     <>
-      <NavbarComp />
+      <DashboardNav />
       <hr className="text-gray-300 " />
       <FeedbackForm fetchFeedbacks={fetchFeedbacks} />
       <SearchBar

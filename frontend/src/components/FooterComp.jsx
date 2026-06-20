@@ -5,10 +5,10 @@ import { FaRegCopyright } from "react-icons/fa";
 function FooterComp() {
   return (
     <>
-    <div className="flex justify-between px-30 py-3">
+    <div className="flex justify-between px-5 md:px-30 py-1 md:py-3">
       <div className="flex gap-1 justify-center items-center">
-        <LuMessagesSquare className="text-yellow-700" />{" "}
-        <p className="roman-font">Feedbackify</p>
+        <LuMessagesSquare className="text-yellow-700 text-xs md:text-sm" />{" "}
+        <p className="roman-font text-xs md:text-sm">Feedbackify</p>
       </div>
 
       <div className="flex gap-1 justify-center items-center text-xs">
