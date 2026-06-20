@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -12,7 +13,9 @@ function HeroSection() {
 
       {/* text  */}
       <div className="pt-4 md:pt-8 pb-3 md:pb-6 roman-font">
-        <h1 className="text-4xl md:text-6xl font-bold md:font-medium">Collect feedback</h1>
+        <h1 className="text-4xl md:text-6xl font-bold md:font-medium">
+          Collect feedback
+        </h1>
         <h1 className="text-5xl md:text-7xl roman-font font-medium text-yellow-700">
           <i>that matters.</i>
         </h1>
@@ -25,7 +28,11 @@ function HeroSection() {
 
       {/* button  */}
 
-      <button className="text-white bg-yellow-800 hover:bg-yellow-700 rounded-xl py-1 md:py-2 px-2 w-3xs flex justify-center items-center gap-2 hover:cursor-pointer">Get started <FaArrowRight /></button>
+      <button className="text-white bg-yellow-800 hover:bg-yellow-700 rounded-xl py-1 md:py-2 px-2 w-3xs gap-2 hover:cursor-pointer">
+        <Link to="/dashboard" className="flex justify-center items-center">
+          Get started <FaArrowRight />
+        </Link>
+      </button>
     </div>
   );
 }
