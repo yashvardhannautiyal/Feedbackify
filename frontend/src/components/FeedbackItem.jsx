@@ -26,17 +26,17 @@ function FeedbackItem({ feedback, fetchFeedbacks }) {
   };
 
   return (
-    <div className="px-30 pb-5">
-      <div className="bg-white border-yellow-800 shadow-lg rounded-xl p-8 mt-2 px-10">
+    <div className="px-5 md:px-30 pb-5">
+      <div className="bg-white border-yellow-800 shadow-lg rounded-xl py-4 md:py-8 mt-2 px-5 md:px-10">
         {/* user details  */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center text-xs md:text-sm">
           {/* name + email  */}
           <div>
-            <p className="flex gap-1 items-center font-bold text-lg">
+            <p className="flex gap-1 items-center font-bold md:text-lg">
               <CiUser />
               {feedback.name}
             </p>
-            <p className="flex gap-1 items-center text-sm text-gray-600">
+            <p className="flex gap-1 items-center md:text-sm text-gray-600">
               <CiMail /> {feedback.email}
             </p>
           </div>
@@ -56,9 +56,9 @@ function FeedbackItem({ feedback, fetchFeedbacks }) {
         </div>
 
         {/* feedback  */}
-        <div className="pt-7">
-          <p>{feedback.message}</p>
-          <p className="pt-4 text-gray-600 text-sm">
+        <div className="pt-2 lg:pt-7">
+          <p className="text-sm">{feedback.message}</p>
+          <p className="pt-1 lg:pt-4 text-gray-600 text-xs md:text-sm">
             Submitted on {" "} {new Date(feedback.createdAt).toLocaleDateString()}
           </p>
         </div>

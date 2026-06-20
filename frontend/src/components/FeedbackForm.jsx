@@ -41,66 +41,66 @@ function FeedbackForm({fetchFeedbacks}) {
   };
 
   return (
-    <div className="px-30">
+    <div className="px-5 md:px-30">
       {/* text  */}
       <div className="py-10">
-        <h2 className="text-4xl roman-font">Feedback</h2>
-        <p className="pt-2 text-gray-700">
+        <h2 className="text-2xl md:text-4xl roman-font">Feedback</h2>
+        <p className="md:pt-2 text-gray-700 text-xs md:text-sm">
           Share your thoughts, suggestions, or concerns with us.
         </p>
       </div>
       <hr className="text-gray-300 " />
 
       {/* form  */}
-      <div className="pt-10">
-        <div className="bg-white w-2xl p-4 rounded-xl border-yellow-800 shadow-lg">
-          <h1 className="text-md font-semibold flex gap-1 items-center">
+      <div className="pt-5 md:pt-10">
+        <div className="bg-white lg:w-2xl p-2 sm:p-4 rounded-xl border-yellow-800 shadow-lg">
+          <h1 className="text-sm md:text-md font-semibold flex gap-1 items-center">
             <LuMessageSquarePlus /> Submit Feedback
           </h1>
 
-          <form className="py-3 flex-col" onSubmit={handleSubmit}>
+          <form className="py-1 sm:py-3 flex-col" onSubmit={handleSubmit}>
             {/*   name input */}
             <div className="pt-2">
-              <p className="pb-1">Name</p>
+              <p className="md:pb-1 text-sm">Name</p>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="rounded-lg w-full py-1 px-2 bg-orange-50 border border-yellow-700 outline-yellow-900"
+                className="rounded-lg w-full sm:py-1 px-1 md:px-2 bg-orange-50 border border-yellow-700 outline-yellow-900 text-sm"
                 placeholder="Enter your name"
               />
             </div>
 
             {/*   email input */}
             <div className="pt-2">
-              <p className="pb-1">Email</p>
+              <p className="md:pb-1 text-sm">Email</p>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="rounded-lg w-full py-1 px-2 bg-orange-50 border border-yellow-700 outline-yellow-900"
+                className="rounded-lg w-full sm:py-1 px-1 md:px-2 bg-orange-50 border border-yellow-700 outline-yellow-900 text-sm"
                 placeholder="your.email@gmail.com"
               />
             </div>
 
             {/*   message input */}
             <div className="pt-2 pb-3">
-              <p className="pb-1">Message</p>
+              <p className="md:pb-1 text-sm">Message</p>
               <textarea
                 rows={4}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="rounded-lg w-full py-1 px-2 bg-orange-50 border border-yellow-700 outline-yellow-900 resize-none"
+                className="rounded-lg w-full sm:py-1 px-1 md:px-2 bg-orange-50 border border-yellow-700 outline-yellow-900 resize-none text-sm"
                 placeholder="Tell us what you think..."
               ></textarea>
             </div>
 
-            <button className="py-2 w-full border bg-yellow-800 hover:bg-yellow-700 text-white rounded-xl hover:cursor-pointer">
+            <button className="py-1 md:py-2 w-full border bg-yellow-800 hover:bg-yellow-700 text-white rounded-xl hover:cursor-pointer text-sm">
               Submit Feedback
             </button>
           </form>
