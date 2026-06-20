@@ -14,8 +14,6 @@ function NavbarComp() {
 
         <div className="flex gap-4 justify-center items-center">
           <FiMoon className="font-bold" />
-
-          <button className="hover:cursor-pointer hover:bg-yellow-800 py-1 px-4 rounded-xl hover:text-white">Log in</button>
           <button className="bg-yellow-800 hover:bg-yellow-700 py-1 px-4 rounded-xl text-white hover:cursor-pointer">Get started</button>
         </div>
       </header>
