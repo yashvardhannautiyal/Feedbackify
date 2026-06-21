@@ -13,7 +13,6 @@ function HomepageNav() {
         </div>
 
           <button className="bg-yellow-800 hover:bg-yellow-700 md:py-1 px-2 md:px-4 rounded-lg md:rounded-xl text-white hover:cursor-pointer">
-            {" "}
             <Link to="/dashboard">Dashboard</Link>
           </button>
       </header>
