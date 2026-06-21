@@ -34,8 +34,8 @@ function Dashboard() {
       feedback.message.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesDate = searchDate
-      ? new Date(feedback.createdAt).toISOString().split("T")[0] === searchDate
-      : true;
+      ? new Date(feedback.createdAt).toLocaleDateString("en-CA") === searchDate
+    : true;
 
     return matchesSearch && matchesDate;
   });
