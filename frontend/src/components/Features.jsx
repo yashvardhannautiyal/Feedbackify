@@ -5,7 +5,7 @@ import { IoShieldOutline } from "react-icons/io5";
 
 function Features() {
   return (
-    <div className='md:flex justify-center md:gap-20 items-center bg-white px-5 md:px-30 py-8 md:py-15'>
+    <div className='md:flex justify-center lg:gap-20 items-center bg-white px-5 md:px-30 py-8 md:py-15'>
         <div className='p-3 w-xs'>
         <LuMessagesSquare className='text-yellow-700 md:text-2xl'/>
         
